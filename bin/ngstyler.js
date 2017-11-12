@@ -262,6 +262,12 @@ const main = async (data) => {
   write(destination + '/package.json', JSON.stringify(pkgOut, null, 2) + '\n');
   logger.log();
 
+  if(data.install) {
+    logger.log('Install dependency...');
+    await utils.exec(`cd ${destination} && npm install`);
+    logger.log();
+  }
+
   return true;
 };
 
@@ -283,7 +289,8 @@ program
   .option('-c --test-css', 'Use CSS test')
   .option('   --test-css-no', 'Don\'t use CSS test')
   .option('-g --git', 'Use Git')
-  .option('   --git-no', 'Don\'t use Git');
+  .option('   --git-no', 'Don\'t use Git')
+  .option('-i --install', 'Automatically install all node dependencies');
 
 program.parse(process.argv);
 // noinspection JSUnresolvedVariable

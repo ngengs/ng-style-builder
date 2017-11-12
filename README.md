@@ -23,6 +23,7 @@ Generated style is based on [Bootstrap v3](http://getbootstrap.com)
        --test-css-no                      Don't use CSS test
     -g --git                              Use Git
        --git-no                           Don't use Git
+    -i --install                          Automatically install all node dependencies
     -h, --help                            output usage information
 ```
 
@@ -30,7 +31,7 @@ If you not pass the options, or needed options not complete it will trigger inte
 
 Minimal use is
 ```
-ngstyler -dejcgh -t "Project Name" -s less
+ngstyler -dejcghi -t "Project Name" -s less
 ```
 
 **Note**
