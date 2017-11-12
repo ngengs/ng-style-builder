@@ -50,6 +50,10 @@ Generated
 npm install -g ng-style-builder
 ```
 
+**Note**
+If you have problem when running command `ngstyler` (Actually I have this problem) please change your `ngstyler` and `ngstyler.cmd`.
+**Look [this](https://github.com/ngengs/ng-style-builder/issues/1) for the detail.**
+
 
 ### Running Generated Styles Boilerplate
 Generated boilerplate can compile using [gulp](https://gulpjs.com/)
