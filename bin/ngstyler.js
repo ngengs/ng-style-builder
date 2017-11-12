@@ -242,6 +242,8 @@ const main = async (data) => {
     logger.log('Preparing git...');
     await templates.copy('git/.gitattributes', destination + '/.gitattributes');
     await templates.copy('git/gitignore', destination + '/.gitignore');
+    logger.log('Initializing git repo...');
+    await utils.exec(`cd ${destination} && git init`);
   }
 
 
