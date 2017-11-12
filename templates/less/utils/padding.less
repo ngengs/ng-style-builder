@@ -1,0 +1,90 @@
+.padding-generator(@selector, @style, @size){
+  .padding-@{selector} when not (@style = null){
+    padding-@{style}: @size !important;
+  }
+  .padding-@{selector} when (@style = null){
+    padding: @size !important;
+  }
+}
+
+.padding-generator(top-no, top, 0);
+.padding-generator(top-xs, top, (@dimension-default / 4));
+.padding-generator(top-sm, top, (@dimension-default / 2));
+.padding-generator(top-md, top, @dimension-default);
+.padding-generator(top-lg, top, (@dimension-default * 1.5));
+.padding-generator(top-xl, top, (@dimension-default * 2));
+.padding-generator(top-xxl, top, (@dimension-default * 2.5));
+
+.padding-generator(bottom-no, bottom, 0);
+.padding-generator(bottom-xs, bottom, (@dimension-default / 4));
+.padding-generator(bottom-sm, bottom, (@dimension-default / 2));
+.padding-generator(bottom-md, bottom, @dimension-default);
+.padding-generator(bottom-lg, bottom, (@dimension-default * 1.5));
+.padding-generator(bottom-xl, bottom, (@dimension-default * 2));
+.padding-generator(bottom-xxl, bottom, (@dimension-default * 2.5));
+
+.padding-generator(right-no, right, 0);
+.padding-generator(right-xs, right, (@dimension-default / 4));
+.padding-generator(right-sm, right, (@dimension-default / 2));
+.padding-generator(right-md, right, @dimension-default);
+.padding-generator(right-lg, right, (@dimension-default * 1.5));
+.padding-generator(right-xl, right, (@dimension-default * 2));
+.padding-generator(right-xxl, right, (@dimension-default * 2.5));
+
+.padding-generator(left-no, left, 0);
+.padding-generator(left-xs, left, (@dimension-default / 4));
+.padding-generator(left-sm, left, (@dimension-default / 2));
+.padding-generator(left-md, left, @dimension-default);
+.padding-generator(left-lg, left, (@dimension-default * 1.5));
+.padding-generator(left-xl, left, (@dimension-default * 2));
+.padding-generator(left-xxl, left, (@dimension-default * 2.5));
+
+.padding-generator(all-no, null, 0);
+.padding-generator(all-xs, null, (@dimension-default / 4));
+.padding-generator(all-sm, null, (@dimension-default / 2));
+.padding-generator(all-md, null, @dimension-default);
+.padding-generator(all-lg, null, (@dimension-default * 1.5));
+.padding-generator(all-xl, null, (@dimension-default * 2));
+.padding-generator(all-xxl, null, (@dimension-default * 2.5));
+
+@media (max-width: @grid-float-breakpoint-max) {
+  .padding-generator(on-sm-top-no, top, 0);
+  .padding-generator(on-sm-top-xs, top, (@dimension-default / 4));
+  .padding-generator(on-sm-top-sm, top, (@dimension-default / 2));
+  .padding-generator(on-sm-top-md, top, @dimension-default);
+  .padding-generator(on-sm-top-lg, top, (@dimension-default * 1.5));
+  .padding-generator(on-sm-top-xl, top, (@dimension-default * 2));
+  .padding-generator(on-sm-top-xxl, top, (@dimension-default * 2.5));
+
+  .padding-generator(on-sm-bottom-no, bottom, 0);
+  .padding-generator(on-sm-bottom-xs, bottom, (@dimension-default / 4));
+  .padding-generator(on-sm-bottom-sm, bottom, (@dimension-default / 2));
+  .padding-generator(on-sm-bottom-md, bottom, @dimension-default);
+  .padding-generator(on-sm-bottom-lg, bottom, (@dimension-default * 1.5));
+  .padding-generator(on-sm-bottom-xl, bottom, (@dimension-default * 2));
+  .padding-generator(on-sm-bottom-xxl, bottom, (@dimension-default * 2.5));
+
+  .padding-generator(on-sm-right-no, right, 0);
+  .padding-generator(on-sm-right-xs, right, (@dimension-default / 4));
+  .padding-generator(on-sm-right-sm, right, (@dimension-default / 2));
+  .padding-generator(on-sm-right-md, right, @dimension-default);
+  .padding-generator(on-sm-right-lg, right, (@dimension-default * 1.5));
+  .padding-generator(on-sm-right-xl, right, (@dimension-default * 2));
+  .padding-generator(on-sm-right-xxl, right, (@dimension-default * 2.5));
+
+  .padding-generator(on-sm-left-no, left, 0);
+  .padding-generator(on-sm-left-xs, left, (@dimension-default / 4));
+  .padding-generator(on-sm-left-sm, left, (@dimension-default / 2));
+  .padding-generator(on-sm-left-md, left, @dimension-default);
+  .padding-generator(on-sm-left-lg, left, (@dimension-default * 1.5));
+  .padding-generator(on-sm-left-xl, left, (@dimension-default * 2));
+  .padding-generator(on-sm-left-xxl, left, (@dimension-default * 2.5));
+
+  .padding-generator(on-sm-all-no, null, 0);
+  .padding-generator(on-sm-all-xs, null, (@dimension-default / 4));
+  .padding-generator(on-sm-all-sm, null, (@dimension-default / 2));
+  .padding-generator(on-sm-all-md, null, @dimension-default);
+  .padding-generator(on-sm-all-lg, null, (@dimension-default * 1.5));
+  .padding-generator(on-sm-all-xl, null, (@dimension-default * 2));
+  .padding-generator(on-sm-all-xxl, null, (@dimension-default * 2.5));
+}

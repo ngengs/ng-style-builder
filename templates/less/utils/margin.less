@@ -1,0 +1,96 @@
+.margin-generator(@selector, @style, @size){
+  .margin-@{selector} when not (@style = null){
+    margin-@{style}: @size !important;
+  }
+  .margin-@{selector} when (@style = null){
+    margin: @size !important;
+  }
+  .margin-@{selector}-minus when (@style = null){
+    margin-@{style}: -@size !important;
+  }
+  .margin-@{selector}-minus when (@style = null){
+    margin: -@size !important;
+  }
+}
+
+.margin-generator(top-no, top, 0);
+.margin-generator(top-xs, top, (@dimension-default / 4));
+.margin-generator(top-sm, top, (@dimension-default / 2));
+.margin-generator(top-md, top, @dimension-default);
+.margin-generator(top-lg, top, (@dimension-default * 1.5));
+.margin-generator(top-xl, top, (@dimension-default * 2));
+.margin-generator(top-xxl, top, (@dimension-default * 2.5));
+
+.margin-generator(bottom-no, bottom, 0);
+.margin-generator(bottom-xs, bottom, (@dimension-default / 4));
+.margin-generator(bottom-sm, bottom, (@dimension-default / 2));
+.margin-generator(bottom-md, bottom, @dimension-default);
+.margin-generator(bottom-lg, bottom, (@dimension-default * 1.5));
+.margin-generator(bottom-xl, bottom, (@dimension-default * 2));
+.margin-generator(bottom-xxl, bottom, (@dimension-default * 2.5));
+
+.margin-generator(right-no, right, 0);
+.margin-generator(right-xs, right, (@dimension-default / 4));
+.margin-generator(right-sm, right, (@dimension-default / 2));
+.margin-generator(right-md, right, @dimension-default);
+.margin-generator(right-lg, right, (@dimension-default * 1.5));
+.margin-generator(right-xl, right, (@dimension-default * 2));
+.margin-generator(right-xxl, right, (@dimension-default * 2.5));
+
+.margin-generator(left-no, left, 0);
+.margin-generator(left-xs, left, (@dimension-default / 4));
+.margin-generator(left-sm, left, (@dimension-default / 2));
+.margin-generator(left-md, left, @dimension-default);
+.margin-generator(left-lg, left, (@dimension-default * 1.5));
+.margin-generator(left-xl, left, (@dimension-default * 2));
+.margin-generator(left-xxl, left, (@dimension-default * 2.5));
+
+.margin-generator(all-no, null, 0);
+.margin-generator(all-xs, null, (@dimension-default / 4));
+.margin-generator(all-sm, null, (@dimension-default / 2));
+.margin-generator(all-md, null, @dimension-default);
+.margin-generator(all-lg, null, (@dimension-default * 1.5));
+.margin-generator(all-xl, null, (@dimension-default * 2));
+.margin-generator(all-xxl, null, (@dimension-default * 2.5));
+
+@media (max-width: @grid-float-breakpoint-max) {
+  .margin-generator(on-sm-top-no, top, 0);
+  .margin-generator(on-sm-top-xs, top, (@dimension-default / 4));
+  .margin-generator(on-sm-top-sm, top, (@dimension-default / 2));
+  .margin-generator(on-sm-top-md, top, @dimension-default);
+  .margin-generator(on-sm-top-lg, top, (@dimension-default * 1.5));
+  .margin-generator(on-sm-top-xl, top, (@dimension-default * 2));
+  .margin-generator(on-sm-top-xxl, top, (@dimension-default * 2.5));
+
+  .margin-generator(on-sm-bottom-no, bottom, 0);
+  .margin-generator(on-sm-bottom-xs, bottom, (@dimension-default / 4));
+  .margin-generator(on-sm-bottom-sm, bottom, (@dimension-default / 2));
+  .margin-generator(on-sm-bottom-md, bottom, @dimension-default);
+  .margin-generator(on-sm-bottom-lg, bottom, (@dimension-default * 1.5));
+  .margin-generator(on-sm-bottom-xl, bottom, (@dimension-default * 2));
+  .margin-generator(on-sm-bottom-xxl, bottom, (@dimension-default * 2.5));
+
+  .margin-generator(on-sm-right-no, right, 0);
+  .margin-generator(on-sm-right-xs, right, (@dimension-default / 4));
+  .margin-generator(on-sm-right-sm, right, (@dimension-default / 2));
+  .margin-generator(on-sm-right-md, right, @dimension-default);
+  .margin-generator(on-sm-right-lg, right, (@dimension-default * 1.5));
+  .margin-generator(on-sm-right-xl, right, (@dimension-default * 2));
+  .margin-generator(on-sm-right-xxl, right, (@dimension-default * 2.5));
+
+  .margin-generator(on-sm-left-no, left, 0);
+  .margin-generator(on-sm-left-xs, left, (@dimension-default / 4));
+  .margin-generator(on-sm-left-sm, left, (@dimension-default / 2));
+  .margin-generator(on-sm-left-md, left, @dimension-default);
+  .margin-generator(on-sm-left-lg, left, (@dimension-default * 1.5));
+  .margin-generator(on-sm-left-xl, left, (@dimension-default * 2));
+  .margin-generator(on-sm-left-xxl, left, (@dimension-default * 2.5));
+
+  .margin-generator(on-sm-all-no, null, 0);
+  .margin-generator(on-sm-all-xs, null, (@dimension-default / 4));
+  .margin-generator(on-sm-all-sm, null, (@dimension-default / 2));
+  .margin-generator(on-sm-all-md, null, @dimension-default);
+  .margin-generator(on-sm-all-lg, null, (@dimension-default * 1.5));
+  .margin-generator(on-sm-all-xl, null, (@dimension-default * 2));
+  .margin-generator(on-sm-all-xxl, null, (@dimension-default * 2.5));
+}

@@ -1,0 +1,48 @@
+{
+  "name": "ng-style-builder",
+  "name_short": "ngstyler",
+  "version": "1.0.0",
+  "description": "Style boilerplate builder for project by @ngengs",
+  "main": "bin/ngstyler.js",
+  "preferGlobal": true,
+  "bin": {
+    "ngstyler": "./bin/ngstyler.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "css",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web",
+    "gulp"
+  ],
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "files": [
+    "LICENSE",
+    "bin/",
+    "lib/",
+    "templates/"
+  ],
+  "homepage": "https://www.ngengs.com",
+  "author": "rizky Kharisma <ngeng.ngengs@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngengs/ng-style-builder.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "commander": "^2.11.0",
+    "inquirer": "^3.3.0",
+    "mkdirp": "^0.5.1",
+    "semver": "^5.4.1",
+    "sorted-object": "^2.0.1",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}

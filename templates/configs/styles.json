@@ -1,0 +1,16 @@
+{
+  "styles": [
+    {
+      "src": "less/core.less",
+      "output": "main"
+    }
+  ],
+  "test": {
+    "csslint": [
+      {
+        "src": ["dist/css/!*.min.css", "dist/css/*.css"],
+        "config": "less/.csslintrc"
+      }
+    ]
+  }
+}

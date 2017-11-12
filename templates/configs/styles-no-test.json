@@ -1,0 +1,8 @@
+{
+  "styles": [
+    {
+      "src": "less/core.less",
+      "output": "main"
+    }
+  ]
+}
