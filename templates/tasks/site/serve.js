@@ -7,10 +7,10 @@ module.exports = {
       files: [`${global.MAIN_BUILD_SITE_DIR}/**`],
       // port: 4000,
       server: {
-        baseDir: global.MAIN_BUILD_SITE_DIR
+        baseDir: global.MAIN_BUILD_SITE_DIR,
       },
-      logConnections: true
+      logConnections: true,
     });
     callback();
-  }
+  },
 };

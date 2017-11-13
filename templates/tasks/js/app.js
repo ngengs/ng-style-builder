@@ -6,21 +6,21 @@ const uglify = require('gulp-uglify');
 
 module.exports = {
   fn: (gulp) => {
-    let runner = [];
+    const runner = [];
     const scriptsConfig = global.MAIN_CONFIGURATION_FILE(2);
     scriptsConfig.scripts.forEach((value) => {
-      let runObject = gulp.src(value.src)
+      const runObject = gulp.src(value.src)
         .pipe(babel())
-        .pipe(rename({prefix: `${global.MAIN_PACKAGE_NAME}-`}))
+        .pipe(rename({ prefix: `${global.MAIN_PACKAGE_NAME}-` }))
         .pipe(header(`${global.MAIN_BANNER_COMMENT}`))
         .pipe(gulp.dest(`${global.MAIN_BUILD_OUTPUT_DIR}/js`))
-        .pipe(rename({suffix: '.min'}))
+        .pipe(rename({ suffix: '.min' }))
         .pipe(uglify({
           compress: {
             warnings: false,
           },
           mangle: true,
-          output: {comments: /^!|@preserve|@license|@cc_on/i},
+          output: { comments: /^!|@preserve|@license|@cc_on/i },
         }))
         .pipe(gulp.dest(`${global.MAIN_BUILD_OUTPUT_DIR}/js`));
 
@@ -28,5 +28,5 @@ module.exports = {
     });
 
     return mergeStream(runner);
-  }
+  },
 };

@@ -1,3 +1,3 @@
 module.exports = {
-  deps: ['test:csslint']
+  deps: ['test:csslint'],
 };

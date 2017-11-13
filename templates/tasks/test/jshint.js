@@ -5,10 +5,10 @@ const mergeStream = require('merge-stream');
 
 module.exports = {
   fn: (gulp) => {
-    let runner = [];
+    const runner = [];
     const scriptsConfig = global.MAIN_CONFIGURATION_FILE(2);
     scriptsConfig.test.jshint.forEach((value) => {
-      let runObject = gulp.src(value.src)
+      const runObject = gulp.src(value.src)
         .pipe(include().on('error', gutil.log))
         .pipe(jshint(value.config))
         .pipe(jshint.reporter('default'));
@@ -17,5 +17,5 @@ module.exports = {
     });
 
     return mergeStream(runner);
-  }
+  },
 };

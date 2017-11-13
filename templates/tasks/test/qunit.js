@@ -5,16 +5,16 @@ const mergeStream = require('merge-stream');
 
 module.exports = {
   fn: (gulp) => {
-    let runner = [];
+    const runner = [];
     const scriptsConfig = global.MAIN_CONFIGURATION_FILE(2);
     scriptsConfig.test.qunit.forEach((value) => {
-      let runObject = gulp.src(value.src)
+      const runObject = gulp.src(value.src)
         .pipe(include().on('error', gutil.log))
-        .pipe(qunit({phantomjsOptions: value.inject}));
+        .pipe(qunit({ phantomjsOptions: value.inject }));
 
       runner.push(runObject);
     });
 
     return mergeStream(runner);
-  }
+  },
 };

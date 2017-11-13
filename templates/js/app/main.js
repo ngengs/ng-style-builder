@@ -2,12 +2,10 @@
 // Because all js file inside js/app will compile with babel
 
 $('document').ready(() => {
-  'use strict';
-
-  let $body = $('body');
+  const $body = $('body');
 
   $body.onClick((e) => {
-    let $this = $(e.currentTarget);
+    const $this = $(e.currentTarget);
     $this.fadeOut();
-  })
+  });
 });

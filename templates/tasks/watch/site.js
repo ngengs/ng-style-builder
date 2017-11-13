@@ -43,5 +43,5 @@ module.exports = {
       runSquence(['site:reload-pages']);
     });
     callback();
-  }
+  },
 };

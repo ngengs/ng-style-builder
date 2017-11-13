@@ -15,15 +15,15 @@ module.exports = {
       \n${global.MAIN_CONFIG_BRIDGE.config.jqueryCheck.join('\n')}
       \n${global.MAIN_CONFIG_BRIDGE.config.jqueryVersionCheck.join('\n')}`),
       gulp.dest(`${global.MAIN_BUILD_OUTPUT_DIR}/js`),
-      rename({suffix: '.min'}),
+      rename({ suffix: '.min' }),
       uglify({
         compress: {
           warnings: false,
         },
         mangle: true,
-        output: {comments: /^!|@preserve|@license|@cc_on/i},
+        output: { comments: /^!|@preserve|@license|@cc_on/i },
       }),
       gulp.dest(`${global.MAIN_BUILD_OUTPUT_DIR}/js`),
     ], callback);
-  }
+  },
 };

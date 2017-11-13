@@ -31,14 +31,14 @@ module.exports = {
       logger(event);
       runSquence(['js:core']);
     });
-    gulp.watch('images/**/*', (event) => {
+    gulp.watch('app/images/**/*', (event) => {
       logger(event);
       runSquence(['images']);
     });
-    gulp.watch('fonts/**/*', (event) => {
+    gulp.watch('app/fonts/**/*', (event) => {
       logger(event);
       runSquence(['fonts']);
     });
     callback();
-  }
+  },
 };

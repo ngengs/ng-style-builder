@@ -1,3 +1,3 @@
 module.exports = {
-  deps: ['watch:dist']
+  deps: ['watch:dist'],
 };

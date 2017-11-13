@@ -1,3 +1,3 @@
 module.exports = {
-  deps: ['test:js']
+  deps: ['test:js'],
 };
