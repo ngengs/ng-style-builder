@@ -18,7 +18,8 @@
     "front-end",
     "framework",
     "web",
-    "gulp"
+    "gulp",
+    "cli"
   ],
   "engines": {
     "node": ">= 8.0.0"
