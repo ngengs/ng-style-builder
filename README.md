@@ -31,7 +31,7 @@ If you not pass the options, or needed options not complete it will trigger inte
 
 Minimal use is
 ```
-ngstyler -dejcghi -t "Project Name" -s less
+ngstyler -dejcgi -t "Project Name" -s less
 ```
 
 **Note**
