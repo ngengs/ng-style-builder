@@ -29,7 +29,10 @@
     "lib/",
     "templates/"
   ],
-  "homepage": "https://www.ngengs.com",
+  "bugs": {
+    "url": "https://github.com/ngengs/ng-style-builder/issues"
+  },
+  "homepage": "https://github.com/ngengs/ng-style-builder",
   "author": "rizky Kharisma <ngeng.ngengs@gmail.com>",
   "repository": {
     "type": "git",
