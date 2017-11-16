@@ -18,7 +18,7 @@ module.exports = {
       if (fs.existsSync(pageDataLocation)) {
         pageData = JSON.parse(fs.readFileSync(pageDataLocation));
       } else {
-        gutil.log(`Tidak terdapat data untuk ${path.basename(file.path)}`);
+        gutil.log(`No data for ${path.basename(file.path)}`);
       }
       return {
         projects,
