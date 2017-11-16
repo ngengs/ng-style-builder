@@ -1,8 +1,6 @@
 # NG Style Builder
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ngengs/ng-style-builder.svg)](https://greenkeeper.io/)
-
-[![Build Status](https://travis-ci.org/ngengs/ng-style-builder.svg?branch=master)](https://travis-ci.org/ngengs/ng-style-builder) [![npm](https://img.shields.io/npm/v/ng-style-builder.svg)](https://www.npmjs.com/package/ng-style-builder) [![David](https://img.shields.io/david/ngengs/ng-style-builder.svg)](https://www.npmjs.com/package/ng-style-builder) [![David](https://img.shields.io/david/dev/ngengs/ng-style-builder.svg)](https://www.npmjs.com/package/ng-style-builder) [![license](https://img.shields.io/npm/l/ng-style-builder.svg)](https://www.npmjs.com/package/ng-style-builder)
+[![Build Status](https://travis-ci.org/ngengs/ng-style-builder.svg?branch=development)](https://travis-ci.org/ngengs/ng-style-builder) [![npm](https://img.shields.io/npm/v/ng-style-builder.svg)](https://www.npmjs.com/package/ng-style-builder) [![David](https://img.shields.io/david/ngengs/ng-style-builder.svg)](https://www.npmjs.com/package/ng-style-builder) [![David](https://img.shields.io/david/dev/ngengs/ng-style-builder.svg)](https://www.npmjs.com/package/ng-style-builder) [![license](https://img.shields.io/npm/l/ng-style-builder.svg)](https://www.npmjs.com/package/ng-style-builder) [![Greenkeeper badge](https://badges.greenkeeper.io/ngengs/ng-style-builder.svg)](https://greenkeeper.io/)
 
 This is style boilerplate builder that I use when get project to create style some website.
 Generated style is based on [Bootstrap v3](http://getbootstrap.com)
