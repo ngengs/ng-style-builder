@@ -11,6 +11,8 @@ module.exports = {
     .pipe(data((file) => {
       const head = JSON.parse(fs.readFileSync('./data/head.json'));
       const footer = JSON.parse(fs.readFileSync('./data/footer.json'));
+      const projects = {};
+      projects.package_name = global.MAIN_PACKAGE_NAME;
       let pageData = null;
       const pageDataLocation = `./data/${path.basename(file.path)}.json`;
       if (fs.existsSync(pageDataLocation)) {
@@ -19,6 +21,7 @@ module.exports = {
         gutil.log(`Tidak terdapat data untuk ${path.basename(file.path)}`);
       }
       return {
+        projects,
         head,
         footer,
         data: pageData,
