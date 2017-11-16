@@ -4,7 +4,7 @@ const gutil = require('gulp-util');
 module.exports = {
   fn: (gulp, callback) => {
     const logger = (event) => {
-      gutil.log('Watched file', `'${gutil.colors.cyan(event.path)}'`, `(${gutil.colors.magenta(event.type)})`);
+      gutil.log('Watched file', gutil.colors.cyan(event.path), gutil.colors.magenta(event.type));
     };
     gulp.watch('configs/styles.json', (event) => {
       logger(event);
@@ -38,7 +38,7 @@ module.exports = {
       logger(event);
       runSquence(['fonts'], ['site:reload-assets']);
     });
-    gulp.watch('views/**/*', (event) => {
+    gulp.watch(['views/**/*', 'data/*.json'], (event) => {
       logger(event);
       runSquence(['site:reload-pages']);
     });

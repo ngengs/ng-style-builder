@@ -5,7 +5,7 @@ module.exports = {
   deps: ['dist'],
   fn: (gulp, callback) => {
     const logger = (event) => {
-      gutil.log('Watched file', `'${gutil.colors.cyan(event.path)}'`, `(${gutil.colors.magenta(event.type)})`);
+      gutil.log('Watched file', gutil.colors.cyan(event.path), gutil.colors.magenta(event.type));
     };
     gulp.watch('configs/styles.json', (event) => {
       logger(event);
