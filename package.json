@@ -42,7 +42,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.3.0",
-    "commander": "^3.0.0",
+    "commander": "^4.0.1",
     "inquirer": "^7.0.0",
     "mkdirp": "^0.5.1",
     "semver": "^6.0.0",
