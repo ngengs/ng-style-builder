@@ -44,7 +44,7 @@
     "chalk": "^2.3.0",
     "commander": "^3.0.0",
     "inquirer": "^7.0.0",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.3",
     "semver": "^6.0.0",
     "sorted-object": "^2.0.1",
     "validate-npm-package-name": "^3.0.0"
