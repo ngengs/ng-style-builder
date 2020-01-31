@@ -45,7 +45,7 @@
     "commander": "^3.0.0",
     "inquirer": "^7.0.0",
     "mkdirp": "^0.5.1",
-    "semver": "^6.0.0",
+    "semver": "^7.1.2",
     "sorted-object": "^2.0.1",
     "validate-npm-package-name": "^3.0.0"
   },
