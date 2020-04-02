@@ -41,7 +41,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "^2.3.0",
+    "chalk": "^4.0.0",
     "commander": "^3.0.0",
     "inquirer": "^7.0.0",
     "mkdirp": "^0.5.1",
